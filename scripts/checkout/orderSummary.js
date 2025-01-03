@@ -142,3 +142,13 @@ export function renderOrderSummary() {
       });
     });
 }
+let day=dayjs().add(1,'days');
+console.log(day.format('dddd'));
+function  isWeekend(day){
+  let dayName=day.format('dddd');
+  if(dayName==='Saturday' || 'Sunday')
+  {
+    return dayName;
+  }
+}
+console.log(isWeekend(day));
